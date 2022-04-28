@@ -1,0 +1,74 @@
+.home-page {
+
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+
+    h1 {
+        color: white;
+        font-size: 52px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        
+        &::before{
+            content: '<h1>';
+            color: #ff4f00;
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: 15px;
+            opacity: 0.6;
+        }
+
+    }
+
+    h2 {
+        color: #ffffff;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 15px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+
+        &::after{
+            content: '<h1/>';
+            color: #ff4f00;
+            font-family: 'La Belle Aurore';
+            font-size: 17px;
+            position: absolute;
+            margin-top: 40px;
+            left: 15px;
+            opacity: 0.6;
+        }
+    }
+
+    .flat-button {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 0.5px solid #ff4f00;
+        float: left;
+        margin-top: 50px;
+
+        &:hover {
+            background-color: #ff4f00;
+            color: #ffffff;
+            -webkit-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+        
+    }
+}
